@@ -11,10 +11,6 @@ function App() {
         //state //setState
   const [route, setRoute] = useState('home');
 
-  // <div>
-  //   <Navbar/>
-  // </div>
-  
     function changeRoute(){
     if(route === 'home'){
       setRoute('other')
@@ -28,26 +24,24 @@ function App() {
   if(route === 'home'){
     return (
       <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          
-         THIS IS HOME
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button handleClick={changeRoute} />
-        <Form/>
-        <Example/>
-      </header>
-     
-    </div>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            
+          THIS IS HOME
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+          <Button handleClick={changeRoute} />
+          <Form/>
+        </header>
+      </div>
     )
   }
 
