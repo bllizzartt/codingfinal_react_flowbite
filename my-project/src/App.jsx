@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
 import Button from './Button';
-
+import Form from './Form';
+import Example from './Navbar';
 
 function App() {
 
@@ -10,6 +11,9 @@ function App() {
         //state //setState
   const [route, setRoute] = useState('home');
 
+  // <div>
+  //   <Navbar/>
+  // </div>
   
     function changeRoute(){
     if(route === 'home'){
@@ -27,6 +31,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+          
          THIS IS HOME
         </p>
         <a
@@ -38,6 +43,8 @@ function App() {
           Learn React
         </a>
         <Button handleClick={changeRoute} />
+        <Form/>
+        <Example/>
       </header>
      
     </div>
@@ -64,6 +71,7 @@ function App() {
  
   </div>
   );
+
 
   
 }
